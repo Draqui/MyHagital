@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age of the United States</title>
+    <script>
+        // Function to calculate the age of the United States
+        function calculateAge() {
+            const foundingYear = 1776;
+            const currentYear = new Date().getFullYear();
+            const age = currentYear - foundingYear;
+            document.getElementById('age').textContent = age;
+        }
+    </script>
+</head>
+<body onload="calculateAge()">
+    <h1>Age of the United States</h1>
+    <p>The United States of America is <span id="age"></span> years old.</p>
+</body>
+</html>
+
